@@ -6,6 +6,11 @@ game input is from Num-Pad (in the same arrangment of the board)
 
 ![Game preview](http://i.imgur.com/joxdCFc.png)
 
+Generally the code is divided into 3 parts:
+* **draw.py** : handles everything associated with the GUI and pygame
+* **board.py** : contains everything related to solving the game and making moves (draw.py is accessible through board.py only)
+* **main.py** : the main structure of the game, starting the game, giving turns and showing the end resutl (only accesses board.py)
+
 ## Features
 * The game is solved using Minimax algorithm (in the starting of the game so no delay while playing) so the optimal solution is garunteed, actually you can never win with the hardest difficulty :"D (see difficulty options below)
 ![lose preview](http://i.imgur.com/XxdTngi.png)
