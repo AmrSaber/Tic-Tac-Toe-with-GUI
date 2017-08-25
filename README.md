@@ -12,7 +12,6 @@ game input is from Num-Pad (in the same arrangment of the board)
 * You can choose to play first (as X) or second (as O)
 ![Turn preview](http://i.imgur.com/xXsI3qM.png)
 * The difficulty of the game can be controlled by the variable intel in board.py - the variable indicates the chance that the coumputer will make a wrong move (0 means totally random, wrong moves and 1 means no random moves at all, any number in between is controlls how difficult the game is)
-![intel previes](http://i.imgur.com/MeaQ8Sp.png)
 
 ## Dependencies
 * ![Python 2.7](https://www.python.org/download/releases/2.7/)
