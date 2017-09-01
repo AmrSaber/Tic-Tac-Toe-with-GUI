@@ -68,6 +68,7 @@ class Board(object):
 		player = self.getNext(self.board)
 		self.board = self.setMask(self.board, pos, player)
 		draw.markBox(player, pos)
+		draw.setAllowed() 
 	
 	def solve(self, msk):
 		if msk in self.mem: return self.mem[msk]
