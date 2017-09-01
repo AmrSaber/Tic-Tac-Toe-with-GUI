@@ -164,6 +164,9 @@ def result (res) :
 def highlight (start , end) :
 	pygame.draw.line(window , black , centers_xy[start], centers_xy[end],10) 
 	
+def setAllowed ():
+        pygame.event.set_allowed(pygame.KEYUP)
+        	
 
 def takeInput():
 	pygame.event.clear()
@@ -174,22 +177,31 @@ def takeInput():
 				pygame.quit()
 				return -1
 			if event.type == pygame.KEYUP and (event.key==pygame.K_7 or event.key==pygame.K_KP7):
+				pygame.event.set_blocked(pygame.KEYUP)
 				return 0
 			elif event.type == pygame.KEYUP and (event.key==pygame.K_8 or event.key==pygame.K_KP8):
+				pygame.event.set_blocked(pygame.KEYUP)
 				return 1
 			elif event.type == pygame.KEYUP and (event.key==pygame.K_9 or event.key==pygame.K_KP9):
+				pygame.event.set_blocked(pygame.KEYUP)
 				return 2
 			elif event.type == pygame.KEYUP and (event.key==pygame.K_4 or event.key==pygame.K_KP4):
+				pygame.event.set_blocked(pygame.KEYUP)
 				return 3
 			elif event.type == pygame.KEYUP and (event.key==pygame.K_5 or event.key==pygame.K_KP5):
+				pygame.event.set_blocked(pygame.KEYUP)
 				return 4
 			elif event.type == pygame.KEYUP and (event.key==pygame.K_6 or event.key==pygame.K_KP6):
+				pygame.event.set_blocked(pygame.KEYUP)
 				return 5
 			elif event.type == pygame.KEYUP and (event.key==pygame.K_1 or event.key==pygame.K_KP1):
+				pygame.event.set_blocked(pygame.KEYUP)
 				return 6
 			elif event.type == pygame.KEYUP and (event.key==pygame.K_2 or event.key==pygame.K_KP2):
+				pygame.event.set_blocked(pygame.KEYUP)
 				return 7
 			elif event.type == pygame.KEYUP and (event.key==pygame.K_3 or event.key==pygame.K_KP3):
+				pygame.event.set_blocked(pygame.KEYUP)
 				return 8
 			#if event.type == pygame.KEYUP and event.key==pygame.K_c :
 			#   clear_all()
